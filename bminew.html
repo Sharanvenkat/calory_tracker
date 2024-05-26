@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+</head>
+<body>
+    <script>
+        // Prompt the user for height and weight
+        let height = parseFloat(prompt("Enter your height in meters"));
+        let weight = parseFloat(prompt("Enter your weight in kilograms"));
+
+        // Calculate BMI
+        let bmi = weight / Math.pow(height, 2);
+        let bmiFixed = bmi.toFixed(2);
+
+        // Display the BMI result
+        document.write(`Your BMI is ${bmiFixed}<br>`);
+
+        // Determine and display the weight category
+        if (bmi < 18.5) {
+            document.write("You are Underweight");
+        } else if (bmi >= 18.5 && bmi <= 24.9) {
+            document.write("You are Normal");
+        } else if (bmi >= 25 && bmi <= 29.9) {
+            document.write("You are Overweight");
+        } else if (bmi >= 30 && bmi <= 34.9) {
+            document.write("You are Obese");
+        } else {
+            document.write("You are Extremely Obese");
+        }
+    </script>
+</body>
+</html>

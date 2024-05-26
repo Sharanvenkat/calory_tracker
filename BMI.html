@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+</head>
+<body>
+	<script>
+	let a,b,c,d,e;
+	a=parseFloat(prompt("Enter your height in meters"));
+	b=parseFloat(prompt("Enter your weight in kilograms"));
+	c=Math.pow(a,2);
+	d=b/c;
+	e=d.toFixed(2);
+	document.write("Your BMI is=",e,"<br>");
+	if(e<18.5){
+		document.write("You are Underweight");
+	}
+	else if(e>=18.5 && e<=24.9){
+		document.write("You are Normal");
+	}
+	else if(e>=25 && e<=29.9){
+		document.write("You are OverWeight");
+	}
+	else if(e>=30 && e<=34.9){
+		document.write("You are Obese");
+	}
+	else if(e>35){
+		document.write("You are Extremely Obese");
+	}
+
+	</script>
+</body>
+</html>

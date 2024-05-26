@@ -1,0 +1,293 @@
+.main {
+    height: 1750px;
+    width: 1450px;
+}
+
+.one {
+    height: 300px;
+    width: 1400px;
+    margin: 25px;
+    background-color: pink;
+    border-radius: 20px;
+    text-align: center;
+}
+.onea{                                                                                                           
+    text-align: center;
+    color: white;
+    font-size: larger;
+    margin-top: 100px;
+}
+.oneb{
+    color: white;
+    font-size: larger;
+}
+.two {
+    height: 300px;
+    width: 1400px;
+    margin: 25px;
+    background-color: rgb(106, 106, 248);
+    border-radius: 20px;
+}
+
+.two1 {
+    height: 300px;
+    width: 698px;
+    float: left;
+    text-align: center;
+}
+
+.two2 {
+    height: 296px;
+    width: 697px;
+    float: left;
+    text-align: justify;
+    
+}
+
+.three {
+    height: 50px;
+    width: 1400px;
+    margin: 25px;
+}
+.threea{
+    margin-left: 1050px;
+    color: blue;
+}
+.threeb{
+    color: red;
+}
+.four {
+    height: 620px;
+    width: 1400px;
+    margin: 25px;
+    border-radius: 20px;
+}
+
+.four1 {
+    height: 182px;
+    width: 320px;
+    margin: 10px;
+    border-radius: 10px;
+    float: left;
+    margin-left: 15px;
+}
+
+.five {
+    height: 300px;
+    width: 1400px;
+    margin: 25px;
+    background-color: rgb(171, 171, 249);
+    border-radius: 20px;
+}
+.fiveone{
+    height:250px;
+    width:463px;
+    float: left;
+    color: white;
+    border-bottom: 2px solid white; 
+}
+.fiveonea{
+    text-align: left;
+    margin-top: 20px;
+    margin-left:20px;
+
+}
+.fiveoneb{
+    border: 2px solid white;
+    width:400px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    margin-left:20px;
+    
+}
+.fiveonebb{
+    border: 2px solid white;
+    width:400px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    margin-top:50px;
+    margin-left:20px;
+}
+.aaa{
+    text-align: right;
+    margin-right: 40px;
+}
+.fivetwo{
+    height:250px;
+    width:463px;
+    float: left;
+    border-bottom: 2px solid white;
+}
+.fivethree{
+    height:250px;
+    width:470px;
+    float: left;
+    text-align: center;
+    border-bottom: 2px solid white;
+}
+.background {
+    background-image: url(./car2.jpg);
+    background-size: 100% 100%;
+}
+.two3 {
+    margin: auto;
+    width: 500px;
+    word-wrap: break-word;
+    margin-top:40px;
+}
+address{
+    margin-left: 50px;
+    margin-top:50px;
+}
+.ic{
+    margin-top: 100px;
+    margin-left:50px; 
+}
+ @media screen and (min-width:750px) and (max-width:850px) {
+    .main {
+        width: 793px;
+       height: 3650px;
+    }
+    
+    .one {
+        height: 300px;
+        width: 750px;
+        margin: 25px;
+        background-color: pink;
+        border-radius: 20px;
+        text-align: center;
+    }
+    .onea{                                                                                                           
+        text-align: center;
+        color: white;
+        font-size: medium;
+        margin-top: 80px;
+    }
+    .oneb{
+        color: white;
+        font-size:30px;
+    }
+    .two {
+        height: 450px;
+        width: 750px;
+        margin: 25px;
+        background-color: rgb(106, 106, 248);
+        border-radius: 20px;
+    }
+    
+    .two1 {
+        height: 250px;
+        width: 750px;
+        text-align: center;
+    }
+    
+    .two2 {
+        height: 200px;
+        width: 750px;
+        text-align: justify;
+    }
+    
+    .three {
+        height: 50px;
+        width: 750px;
+        margin: 25px;
+    }
+    .threea{
+        margin-left: 390px;
+        color: blue;
+        font-size: 20px;
+    }
+    .threeb{
+        color: red;
+        font-size: 20px;
+    }
+    .four {
+        height: 1300px;
+        width: 750px;
+        margin: 25px;
+        border-radius: 20px;
+    }
+    .four1 {
+        height: 200px;
+        width: 350px;
+        margin: 10px;
+        border-radius: 10px;
+        margin-left: 15px;
+    }
+    
+    .five {
+        height: 900px;
+        width: 740px;
+        margin: 35px;
+        background-color: rgb(171, 171, 249);
+        border-radius: 20px;
+    }
+    .fiveone{
+        height:300px;
+        width:750px;
+        color: white;
+        border-bottom: 2px solid white; 
+       
+    }
+    .fiveonea{
+        text-align: left;
+        margin-top: 20px;
+        margin-left:20px;
+        font-size: 20px;
+    }
+    .fiveoneb{
+        border: 2px solid white;
+        width:750px;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        margin-left:20px;
+    }
+    .fiveonebb{
+        border: 2px solid white;
+        width:750px;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        margin-top:50px;
+        margin-left:20px;
+    }
+    .aaa{
+        text-align: right;
+        margin-right: 40px;
+        font-size: 20px;
+    }
+    .fivetwo{
+        height:300px;
+        width:750px;
+        border-bottom: 2px solid white;
+    }
+    .fivethree{
+        height:280px;
+        width:750px;
+        text-align: center;
+        border-bottom: 2px solid white;
+    }
+    .background {
+        background-image: url(./car2.jpg);
+        background-size: 100% 100%;
+    }
+    .two3 {
+        margin: auto;
+        width: 700px;
+        word-wrap: break-word;
+        margin-top:40px;
+        font-size: 20px;
+    }
+    address{
+        margin-left: 150px;
+        margin-top:50px;
+        font-size: 20px;
+    }
+    .ic{
+        margin-top: 100px;
+        margin-left:150px; 
+    }
+ }

@@ -1,0 +1,42 @@
+.a{
+    height:700px;
+    width:auto;
+    text-align: center;
+
+}
+.b{
+    text-align: left;
+    height: 450px;
+    width:350px;
+    border: 2px solid black;
+    margin-left: 20px;
+    padding-left: 10px;
+}
+.form{
+    height:1000px;
+    width:1000px;
+    
+   
+}
+input{
+    height: 10px;
+    width:310px;
+    padding-top: 15px;
+    margin-top: 10px;
+}
+textarea{
+    margin-top: 5px;
+}
+.backgroun{
+    background-image: url("./backgroundimage.jpeg");
+    background-size:100% 100%;
+    opacity: 70%;
+}
+.aa{
+    height:10px;
+    width:80px;
+    background-color: green;
+}
+.bb{
+    color:green;
+}

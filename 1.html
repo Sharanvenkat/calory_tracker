@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <style>
+        .a {
+            height: 680px;
+            width: 100%;
+            text-align: center;
+            background-color: bisque;
+        }
+        .b {
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+        input {
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+        }
+        .c {
+            background-color: blue;
+        }
+        label {
+            font-size: larger;
+        }
+        .d {
+            background-image: url(./bmi.jpeg);
+            background-size: 100% 100%;
+        }
+        .result-header {
+        font-size: 30px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="a d">
+        <h1 class="b">BMI CALCULATOR</h1>
+        <form id="bmiForm">
+            <div>
+                <label>Enter your Weight</label>
+                <input type="text" id="weight" placeholder="Weight in kilograms"><br>
+                <label>Enter your Height</label>
+                <input type="text" id="height" placeholder="Height in meters"><br>
+                <div>
+                    <input type="button" value="SUBMIT" class="sub" onclick="calculateBMI()">
+                </div>
+            </div>
+        </form>
+        <div id="result"></div>
+    </div>
+
+    <script>
+        function calculateBMI() {
+            let height = parseFloat(document.getElementById('height').value);
+            let weight = parseFloat(document.getElementById('weight').value);
+
+            if (isNaN(height) || isNaN(weight)) {
+                alert('Please enter valid numbers for height and weight.');
+                return;
+            }
+
+            let bmi = weight / Math.pow(height, 2);
+            let bmiFixed = bmi.toFixed(2);
+
+            let resultText = `<span class="result-header">Your BMI is ${bmiFixed}<br></span>`;
+            if (bmi < 18.5) {
+                resultText += "<span style='color: red;font-size: 30px;'>You are Underweight</span>";
+            } else if (bmi >= 18.5 && bmi <= 24.9) {
+                resultText += "<span style='color: green;font-size: 30px;'>You are Normal</span>";
+            } else if (bmi >= 25 && bmi <= 29.9) {
+                resultText += "<span style='color: orange;font-size: 30px;'>You are Overweight</span>";
+            } else if (bmi >= 30 && bmi <= 34.9) {
+                resultText += "<span style='color: red;font-size: 30px;'>You are Obese</span>";
+            } else {
+                resultText += "<span style='color: red;font-size: 30px;'>You are Extremely Obese</span>";
+            }
+
+            document.getElementById('result').innerHTML = resultText ;
+        }
+    </script>
+</body>
+</html>
